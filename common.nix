@@ -46,8 +46,8 @@
   ];
 
   environment.shellAliases = {
-    rebuild = "sudo nixos-rebuild switch --flake ~/nixos-new-config#${config.networking.hostName}";
-    rebuild-flake = "sudo nixos-rebuild switch --flake ~/nixos-new-config#${config.networking.hostName}";
+    rebuild = "sudo nixos-rebuild switch --flake ~/Projects/nixos-config#${config.networking.hostName}";
+    rebuild-flake = "sudo nixos-rebuild switch --flake ~/Projects/nixos-config#${config.networking.hostName}";
   };
 
   programs.git = {
