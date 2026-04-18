@@ -11,6 +11,9 @@
   ];
 
   environment.shellAliases = {
+    rebuild-build = "sudo nixos-rebuild build --flake ~/Projects/nixos-config#Nixie";
+    rebuild-switch = "sudo nixos-rebuild switch --flake ~/Projects/nixos-config#Nixie";
+
     homelab-up = "docker compose -f ~/Projects/homelab/compose.yml up -d";
     homelab-down = "docker compose -f ~/Projects/homelab/compose.yml down";
 

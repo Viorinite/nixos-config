@@ -43,6 +43,7 @@
     google-chrome
     vscode
     docker-compose
+    gradia
   ];
 
   environment.shellAliases = {

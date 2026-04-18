@@ -39,13 +39,13 @@
         ];
       };
 
-      Worklaptop = nixpkgs.lib.nixosSystem {
+      nibblet = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
-          ./hardware/work-laptop-hardware.nix
+          ./hardware/nibblet-hardware.nix
           ./common.nix
-          ./hosts/work-laptop.nix
+          ./hosts/nibblet.nix
         ];
       };
     };
