@@ -34,6 +34,8 @@
     procps
     nodejs_22
     python3
+    go
+    pipx
     gcc
     gnumake
     sqlite
@@ -50,6 +52,8 @@
     obsidian
     gemini-cli
   ];
+
+  environment.localBinInPath = true;
 
   environment.shellAliases = {
     rebuild = "sudo nixos-rebuild switch --flake ~/Projects/nixos-config#${config.networking.hostName}";
