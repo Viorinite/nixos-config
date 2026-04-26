@@ -22,7 +22,9 @@
 
   environment.systemPackages = with pkgs; [
     fastfetch
+    tmux
     git
+    gh
     curl
     wget
     htop
@@ -44,6 +46,9 @@
     vscode
     docker-compose
     gradia
+    himalaya
+    obsidian
+    gemini-cli
   ];
 
   environment.shellAliases = {
